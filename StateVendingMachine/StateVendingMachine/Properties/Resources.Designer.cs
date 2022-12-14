@@ -93,9 +93,9 @@ namespace StateVendingMachine.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap coin15 {
+        internal static System.Drawing.Bitmap coin20 {
             get {
-                object obj = ResourceManager.GetObject("coin15", resourceCulture);
+                object obj = ResourceManager.GetObject("coin20", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -103,9 +103,9 @@ namespace StateVendingMachine.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap coin15_outline {
+        internal static System.Drawing.Bitmap coin20_outline {
             get {
-                object obj = ResourceManager.GetObject("coin15_outline", resourceCulture);
+                object obj = ResourceManager.GetObject("coin20_outline", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -113,9 +113,9 @@ namespace StateVendingMachine.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap coin15_pressed {
+        internal static System.Drawing.Bitmap coin20_pressed {
             get {
-                object obj = ResourceManager.GetObject("coin15_pressed", resourceCulture);
+                object obj = ResourceManager.GetObject("coin20_pressed", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

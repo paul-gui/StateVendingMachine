@@ -22,14 +22,16 @@ namespace StateVendingMachine
 
         public void Added10c()
         {
-            machine.ChangeState(new Twenty(machine));
-            machine.UpdateCredit(20);
+            machine.ChangeState(new Zero(machine));
+            machine.ReleaseDrink();
+            machine.UpdateCredit(0);
         }
 
-        public void Added15c()
+        public void Added20c()
         {
-            machine.ReleaseDrink();
             machine.ChangeState(new Zero(machine));
+            machine.ReleaseDrink();
+            machine.GiveChange(10);
             machine.UpdateCredit(0);
         }
     }

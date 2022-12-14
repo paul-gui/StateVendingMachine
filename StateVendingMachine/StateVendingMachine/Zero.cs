@@ -24,10 +24,9 @@ namespace StateVendingMachine
             machine.ChangeState(new Ten(machine));
             machine.UpdateCredit(10);
         }
-        public void Added15c()
+        public void Added20c()
         {
-            machine.ChangeState(new Fifteen(machine));
-            machine.UpdateCredit(15);
+            machine.ReleaseDrink();
         }
     }
 }

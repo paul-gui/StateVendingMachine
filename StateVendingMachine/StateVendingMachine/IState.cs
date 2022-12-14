@@ -11,6 +11,6 @@ namespace StateVendingMachine
 
         void Added5c();
         void Added10c();
-        void Added15c();
+        void Added20c();
     }
 }

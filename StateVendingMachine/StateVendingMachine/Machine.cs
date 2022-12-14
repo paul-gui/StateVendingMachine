@@ -44,7 +44,7 @@ namespace StateVendingMachine
         {
             lblChange.Text = "";
             lblDrink.Text = "";
-            state.Added15c();
+            state.Added20c();
         }
 
         public void ReleaseDrink()

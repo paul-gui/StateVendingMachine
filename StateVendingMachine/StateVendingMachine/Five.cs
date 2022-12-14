@@ -26,10 +26,12 @@ namespace StateVendingMachine
             machine.UpdateCredit(15);
         }
 
-        public void Added15c()
+        public void Added20c()
         {
-            machine.ChangeState(new Twenty(machine));
-            machine.UpdateCredit(20);
+            machine.ChangeState(new Zero(machine));
+            machine.ReleaseDrink();
+            machine.GiveChange(5);
+            machine.UpdateCredit(0);
         }
     }
 }

@@ -15,13 +15,13 @@ namespace StateVendingMachine
         readonly Machine machine;
         readonly Bitmap coin5 = new Bitmap(Properties.Resources.coin5);
         readonly Bitmap coin5_outline = new Bitmap(Properties.Resources.coin5_outline);
+        readonly Bitmap coin5_pressed = new Bitmap(Properties.Resources.coin5_pressed);
         readonly Bitmap coin10 = new Bitmap(Properties.Resources.coin10);
         readonly Bitmap coin10_outline = new Bitmap(Properties.Resources.coin10_outline);
-        readonly Bitmap coin15 = new Bitmap(Properties.Resources.coin15);
-        readonly Bitmap coin15_outline = new Bitmap(Properties.Resources.coin15_outline);
-        readonly Bitmap coin5_pressed = new Bitmap(Properties.Resources.coin5_pressed);
         readonly Bitmap coin10_pressed = new Bitmap(Properties.Resources.coin10_pressed);
-        readonly Bitmap coin15_pressed = new Bitmap(Properties.Resources.coin15_pressed);
+        readonly Bitmap coin20 = new Bitmap(Properties.Resources.coin20);
+        readonly Bitmap coin20_outline = new Bitmap(Properties.Resources.coin20_outline);
+        readonly Bitmap coin20_pressed = new Bitmap(Properties.Resources.coin20_pressed);
         public Form1()
         {
             InitializeComponent();
@@ -39,7 +39,7 @@ namespace StateVendingMachine
                     pcbCoin10.Image = coin10_outline;
                     break;
                 case 15:
-                    pcbCoin15.Image = coin15_outline;
+                    pcbCoin15.Image = coin20_outline;
                     break;
                 default:
                     break;
@@ -57,7 +57,7 @@ namespace StateVendingMachine
                     pcbCoin10.Image = coin10;
                     break;
                 case 15:
-                    pcbCoin15.Image = coin15;
+                    pcbCoin15.Image = coin20;
                     break;
                 default:
                     break;
@@ -75,7 +75,7 @@ namespace StateVendingMachine
                     pcbCoin10.Image = coin10_pressed;
                     break;
                 case 15:
-                    pcbCoin15.Image = coin15_pressed;
+                    pcbCoin15.Image = coin20_pressed;
                     break;
                 default:
                     break;
@@ -95,7 +95,7 @@ namespace StateVendingMachine
                     machine.Added10c();
                     break;
                 case 15:
-                    pcbCoin15.Image = coin15_outline;
+                    pcbCoin15.Image = coin20_outline;
                     machine.Added15c();
                     break;
                 default:
