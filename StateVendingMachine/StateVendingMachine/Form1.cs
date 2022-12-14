@@ -12,35 +12,20 @@ namespace StateVendingMachine
 {
     public partial class Form1 : Form
     {
-        Machine machine;
-        Bitmap coin5 = new Bitmap(Properties.Resources.coin5);
-        Bitmap coin5_outline = new Bitmap(Properties.Resources.coin5_outline);
-        Bitmap coin10 = new Bitmap(Properties.Resources.coin10);
-        Bitmap coin10_outline = new Bitmap(Properties.Resources.coin10_outline);
-        Bitmap coin15 = new Bitmap(Properties.Resources.coin15);
-        Bitmap coin15_outline = new Bitmap(Properties.Resources.coin15_outline);
-        Bitmap coin5_pressed = new Bitmap(Properties.Resources.coin5_pressed);
-        Bitmap coin10_pressed = new Bitmap(Properties.Resources.coin10_pressed);
-        Bitmap coin15_pressed = new Bitmap(Properties.Resources.coin15_pressed);
+        readonly Machine machine;
+        readonly Bitmap coin5 = new Bitmap(Properties.Resources.coin5);
+        readonly Bitmap coin5_outline = new Bitmap(Properties.Resources.coin5_outline);
+        readonly Bitmap coin10 = new Bitmap(Properties.Resources.coin10);
+        readonly Bitmap coin10_outline = new Bitmap(Properties.Resources.coin10_outline);
+        readonly Bitmap coin15 = new Bitmap(Properties.Resources.coin15);
+        readonly Bitmap coin15_outline = new Bitmap(Properties.Resources.coin15_outline);
+        readonly Bitmap coin5_pressed = new Bitmap(Properties.Resources.coin5_pressed);
+        readonly Bitmap coin10_pressed = new Bitmap(Properties.Resources.coin10_pressed);
+        readonly Bitmap coin15_pressed = new Bitmap(Properties.Resources.coin15_pressed);
         public Form1()
         {
             InitializeComponent();
             machine = new Machine(lblCredit, lblChange, lblDrink);
-        }
-
-        private void btn5c_Click(object sender, EventArgs e)
-        {
-            machine.Added5c();
-        }
-
-        private void btn10c_Click(object sender, EventArgs e)
-        {
-            machine.Added10c();
-        }
-
-        private void btn15c_Click(object sender, EventArgs e)
-        {
-            machine.Added15c();
         }
 
         private void pcbCoin_MouseEnter(object sender, EventArgs e)

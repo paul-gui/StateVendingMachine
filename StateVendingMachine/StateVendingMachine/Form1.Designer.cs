@@ -36,6 +36,7 @@
             this.pcbCoin5 = new System.Windows.Forms.PictureBox();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.panel1 = new System.Windows.Forms.Panel();
+            this.label1 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.pcbCoin15)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pcbCoin10)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pcbCoin5)).BeginInit();
@@ -140,12 +141,24 @@
             this.panel1.Size = new System.Drawing.Size(321, 100);
             this.panel1.TabIndex = 10;
             // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.BackColor = System.Drawing.Color.Gainsboro;
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Location = new System.Drawing.Point(312, 58);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(252, 29);
+            this.label1.TabIndex = 11;
+            this.label1.Text = "Price of one drink: 25¢";
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
             this.ClientSize = new System.Drawing.Size(774, 452);
+            this.Controls.Add(this.label1);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.lblDrink);
             this.Controls.Add(this.lblChange);
@@ -174,6 +187,7 @@
         private System.Windows.Forms.PictureBox pcbCoin10;
         private System.Windows.Forms.PictureBox pcbCoin15;
         private System.Windows.Forms.Panel panel1;
+        private System.Windows.Forms.Label label1;
     }
 }
 
